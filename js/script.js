@@ -15,5 +15,21 @@
 				}
 			]
 		});
+
+
 	});
 })(jQuery);
+
+var enter = document.querySelector(".enter");
+var feedBackPopup = document.querySelector(".modal-window");
+var winCloseBtn = document.querySelector(".modal-window__close");
+
+enter.addEventListener("click", function (event) {
+	event.preventDefault();
+	feedBackPopup.classList.add("block");
+});
+
+winCloseBtn.addEventListener("click", function (event) {
+	event.preventDefault();
+	feedBackPopup.classList.remove("block");
+});

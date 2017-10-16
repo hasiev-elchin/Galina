@@ -6,65 +6,124 @@
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Слайдер</title>
+  <link rel="stylesheet" href="css/font-awesome.min.css">
   <link rel="stylesheet" href="css/slick.css">
   <link rel="stylesheet" href="css/slick-theme.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <div class="container">
-    <section class="slider">
-      <a class="slider__item" href="#">
-        <img src="img/slider__item--1.jpg" width="980" height="493" alt="Slide 1">
-        <h2 class="slider__title">
-          сегодня инновация -<br>
-          завтра необходимость
-          <span>
+  <header class="main-header">
+    <div class="main-header__top">
+      <nav class="main-nav">
+        <div class="container">
+          <div class="main-nav__wrapper">
+            <a class="main-nav__link active">Главная</a>
+            <a class="main-nav__link" href="#">О компании</a>
+            <a class="main-nav__link" href="#">Вакансии</a>
+            <a class="main-nav__link" href="#">Продукция</a>
+            <a class="main-nav__link" href="#">Фотогалерея</a>
+            <a class="main-nav__link" href="#">Новости</a>
+            <a class="main-nav__link" href="#">Статьи</a>
+            <a class="main-nav__link" href="#">Контакты</a>
+          </div>
+        </div>
+      </nav>
+      <div class="main-header__bottom">
+        <div class="container clearfix">
+          <a href="index.html" class="logo">
+            <img src="img/logo.png" width="396" height="56" alt="NOVABOARD">
+          </a>
+          <div class="main-header__bottom-right clearfix">
+            <div class="user-block">
+              <a href="#" class="enter">Вход</a>
+              <div class="user-block__social">
+                Мы в социальных сетях &nbsp;
+                <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-vk" aria-hidden="true"></i></a>
+              </div>
+              <div class="user-block__links">
+                <a href="tel:+380552314410">тел:+38(0552)314-410,</a> <a href="tel:314403">314-403;</a>
+                <a href="tel:+380552359214">факс:+38(0552)359-214</a><br>
+                <a href="mailto:info@penoboard.com">e-mail:info@penoboard.com</a>
+              </div>
+            </div>
+            <form action="">
+              <input class="main-header__search" type="search">
+              <button class="main-header__search-btn" type="submit"><i class="fa fa-search-plus" aria-hidden="true"></i></button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <section class="slider">
+        <a class="slider__item" href="#">
+          <img src="img/slider__item--1.jpg" width="980" height="493" alt="Slide 1">
+          <h2 class="slider__title">
+            сегодня инновация -<br>
+            завтра необходимость
+            <span>
             энергосбережение нового поколения
           </span>
-        </h2>
-      </a>
-      <a class="slider__item" href="#">
-        <img src="img/slider__item--2.jpg" width="980" height="493" alt="Slide 1">
-        <h2 class="slider__title">
-          сегодня инновация -<br>
-          завтра необходимость
-          <span>
+          </h2>
+        </a>
+        <a class="slider__item" href="#">
+          <img src="img/slider__item--2.jpg" width="980" height="493" alt="Slide 1">
+          <h2 class="slider__title">
+            сегодня инновация -<br>
+            завтра необходимость
+            <span>
             энергосбережение нового поколения
           </span>
-        </h2>
-      </a>
-      <a class="slider__item" href="#">
-        <img src="img/slider__item--1.jpg" width="980" height="493" alt="Slide 1">
-        <h2 class="slider__title">
-          сегодня инновация -<br>
-          завтра необходимость
-          <span>
+          </h2>
+        </a>
+        <a class="slider__item" href="#">
+          <img src="img/slider__item--1.jpg" width="980" height="493" alt="Slide 1">
+          <h2 class="slider__title">
+            сегодня инновация -<br>
+            завтра необходимость
+            <span>
             энергосбережение нового поколения
           </span>
-        </h2>
-      </a>
-      <a class="slider__item" href="#">
-        <img src="img/slider__item--2.jpg" width="980" height="493" alt="Slide 1">
-        <h2 class="slider__title">
-          сегодня инновация -<br>
-          завтра необходимость
-          <span>
+          </h2>
+        </a>
+        <a class="slider__item" href="#">
+          <img src="img/slider__item--2.jpg" width="980" height="493" alt="Slide 1">
+          <h2 class="slider__title">
+            сегодня инновация -<br>
+            завтра необходимость
+            <span>
             энергосбережение нового поколения
           </span>
-        </h2>
-      </a>
-      <a class="slider__item" href="#">
-        <img src="img/slider__item--1.jpg" width="980" height="493" alt="Slide 2">
-        <h2 class="slider__title">
-          сегодня инновация -<br>
-          завтра необходимость
-          <span>
+          </h2>
+        </a>
+        <a class="slider__item" href="#">
+          <img src="img/slider__item--1.jpg" width="980" height="493" alt="Slide 2">
+          <h2 class="slider__title">
+            сегодня инновация -<br>
+            завтра необходимость
+            <span>
             энергосбережение нового поколения
           </span>
-        </h2>
-      </a>
+          </h2>
+        </a>
 
-    </section>
+      </section>
+    </div>
+  </header>
+  <div class="modal-window">
+    <button class="modal-window__close" type="button" title="Закрыть">Закрыть</button>
+    <form action="">
+      <label>
+        Логин:
+        <input type="text" required>
+      </label>
+      <label>
+        Пароль:
+        <input type="password" required>
+      </label>
+      <button type="submit">Войти</button>
+    </form>
   </div>
 
   <script defer src="js/jquery-3.2.1.min.js"></script>

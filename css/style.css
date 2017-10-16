@@ -11,13 +11,103 @@
 body {
   margin: 0; }
 
-img {
-  width: 100%;
-  height: auto; }
+.clearfix::after {
+  content: '';
+  display: table;
+  clear: both; }
 
 .container {
   max-width: 980px;
   margin: 0 auto; }
+
+.main-header {
+  background: url("../img/slider-bg.jpg") no-repeat center/cover; }
+  .main-header__bottom {
+    padding: 34px 0;
+    padding-bottom: 0; }
+    .main-header__bottom-right {
+      float: right;
+      width: 420px; }
+  .main-header__search {
+    width: 90%;
+    border: none;
+    border-bottom: 1px solid #bfbeda;
+    outline: none; }
+    .main-header__search:focus {
+      border-bottom-color: #2c2783; }
+    .main-header__search-btn {
+      display: inline-block;
+      border: none;
+      font-size: 20px;
+      color: #2c2783;
+      background-color: transparent;
+      outline: none;
+      cursor: pointer; }
+
+.user-block {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  text-transform: uppercase;
+  color: #01983b; }
+  .user-block a.enter {
+    text-decoration: none;
+    color: #01983b; }
+  .user-block__social {
+    margin-top: -5px; }
+    .user-block__social a {
+      display: inline-block;
+      vertical-align: middle;
+      padding: 6px;
+      margin-right: 5px;
+      text-transform: none;
+      font-size: 14px;
+      text-align: center;
+      color: #fff;
+      background-color: #01983b;
+      border-radius: 50%;
+      transition-duration: .2s;
+      transition-property: transform; }
+      .user-block__social a:last-child {
+        margin-right: 0; }
+      .user-block__social a:hover {
+        transform: scale(1.1); }
+  .user-block__links {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 5px 0; }
+    .user-block__links a {
+      font-weight: bold;
+      text-decoration: none;
+      text-transform: none; }
+
+.main-nav {
+  padding: 23px 0;
+  background: url("../img/main-nav__bg.jpg") repeat; }
+  .main-nav__wrapper {
+    display: flex;
+    justify-content: space-between; }
+  .main-nav__link {
+    padding: 5px 0;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 16px;
+    color: #fff;
+    transition-duration: .3s;
+    transition-property: transform; }
+    .main-nav__link:hover {
+      transform: scale(1.1); }
+    .main-nav__link.active {
+      border-top: 2px solid #fff;
+      border-bottom: 2px solid #fff; }
+      .main-nav__link.active:hover {
+        transform: none; }
+
+.logo {
+  float: left;
+  width: 396px;
+  height: 56px; }
 
 .slider {
   height: auto;
@@ -30,6 +120,8 @@ img {
     color: #fff;
     outline: none; }
     .slider__item img {
+      width: 100%;
+      height: auto;
       max-width: 980px;
       box-shadow: 0px 46px 56px -34px #6e6e6e; }
   .slider__title {
@@ -112,5 +204,69 @@ img {
   right: 10px; }
   .slick-next::before {
     font-size: 50px; }
+
+.modal-window {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  display: none;
+  width: 500px;
+  padding: 25px;
+  margin-left: -250px;
+  border: 5px solid #01983b;
+  text-transform: uppercase;
+  background-color: #fff;
+  transform: translateY(-50%); }
+  .modal-window label {
+    display: block;
+    margin-bottom: 20px; }
+  .modal-window input {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px; }
+  .modal-window button[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #fff;
+    background-color: #01983b;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none; }
+  .modal-window__close {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    display: block;
+    width: 25px !important;
+    height: 25px;
+    border: none;
+    font-size: 0;
+    cursor: pointer;
+    outline: none;
+    background-color: transparent; }
+    .modal-window__close:active {
+      background-color: red; }
+    .modal-window__close::after, .modal-window__close::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 100%;
+      height: 3px;
+      margin-left: -50%;
+      margin-top: -3px;
+      background-color: #ccc; }
+    .modal-window__close::after {
+      transform: rotate(35deg); }
+    .modal-window__close::before {
+      transform: rotate(-35deg); }
+
+.block {
+  display: block !important; }
 
 /*# sourceMappingURL=style.css.map */
