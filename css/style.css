@@ -392,6 +392,16 @@ body {
       margin: 0 auto;
       margin-top: 10px; }
 
+.certificate-modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 999;
+  display: none;
+  transform: translate(-50%, -50%); }
+  .certificate-modal .modal-window__close::before, .certificate-modal .modal-window__close::after {
+    background-color: #fff; }
+
 .contacts {
   margin-bottom: 310px;
   color: #fff; }
@@ -430,3 +440,4 @@ body {
   height: 335px; }
 
 /*# sourceMappingURL=style.css.map */
+
