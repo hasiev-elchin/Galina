@@ -33,3 +33,15 @@ winCloseBtn.addEventListener("click", function (event) {
 	event.preventDefault();
 	feedBackPopup.classList.remove("block");
 });
+
+var map;
+function initMap() {
+
+	var myLatLng = {lat: 46.6681861, lng: 32.6658393};
+
+	map = new google.maps.Map(document.getElementById('map'), {
+		center: myLatLng,
+		zoom: 15,
+		disableDefaultUI: true
+	});
+}
